@@ -1,11 +1,11 @@
 // ---------- МОТОЦИКЛЫ (каталог) ----------
 const bikes = [
-    { id: 1, name: "Yamaha MT-09", desc: "Трехцилиндровый зверь, 890 куб.см, электроника", price: 899000, img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=2070&auto=format" },
-    { id: 2, name: "Honda CB650R", desc: "Нейкий спорт-нью-ретро, 4 цилиндра", price: 785000, img: "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?q=80&w=2072&auto=format" },
-    { id: 3, name: "Kawasaki Ninja 650", desc: "Спорт-туризм, 649 куб.см, идеальный баланс", price: 759900, img: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2070&auto=format" },
-    { id: 4, name: "Suzuki V-Strom 650", desc: "Эндуро/туринг, надежный V2", price: 829000, img: "https://images.unsplash.com/photo-1581447109200-bf2769111d5b?q=80&w=1974&auto=format" },
-    { id: 5, name: "BMW R 1250 GS", desc: "Легендарный 'Гусь', 1254 куб.см", price: 1899000, img: "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=2070&auto=format" },
-    { id: 6, name: "Ducati Monster 937", desc: "Итальянский характер, 937 куб.см", price: 1295000, img: "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?q=80&w=2072&auto=format" }
+    { id: 1, name: "Yamaha MT-09", desc: "Трехцилиндровый зверь, 890 куб.см, электроника", price: 899000, img: "imag/image1.jpg" },
+    { id: 2, name: "Honda CB650R", desc: "Нейкий спорт-нью-ретро, 4 цилиндра", price: 785000, img: "imag/image2.jpg" },
+    { id: 3, name: "Kawasaki Ninja 650", desc: "Спорт-туризм, 649 куб.см, идеальный баланс", price: 759900, img: "imag/image3.jpg" },
+    { id: 4, name: "Suzuki V-Strom 650", desc: "Эндуро/туринг, надежный V2", price: 829000, img: "imag/image4.jpg" },
+    { id: 5, name: "BMW R 1250 GS", desc: "Легендарный 'Гусь', 1254 куб.см", price: 1899000, img: "imag/image5.jpg" },
+    { id: 6, name: "Ducati Monster 937", desc: "Итальянский характер, 937 куб.см", price: 1295000, img: "imag/image6.jpg" }
 ];
 
 // корзина (храним объекты: id, name, price, quantity)
@@ -129,7 +129,7 @@ function renderCatalog() {
         const card = document.createElement("div");
         card.className = "bike-card";
         card.innerHTML = `
-            <img class="bike-img" src="${bike.img}" alt="${bike.name}" onerror="this.src='https://placehold.co/400x250?text=Moto+Image'">
+            <img class="bike-img" src="${bike.img}" alt="${bike.name}" onerror="this.src='imag/image7.jpg'">
             <div class="bike-info">
                 <div class="bike-name">${escapeHtml(bike.name)}</div>
                 <div class="bike-desc">${escapeHtml(bike.desc)}</div>
